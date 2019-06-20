@@ -1,0 +1,97 @@
+try:
+    number = int(input('Enter the number to check '))
+    if (number < 0):
+        print('The enter number {} is Negative'.format(number))
+    elif (number > 0):
+        print ('Enter Number {} is Psitive'.format(number))
+    elif (number == 0):
+        print ('Enter Number {} is Zero'.format(number))
+except ValueError:
+    print('Entered wrong value')
+    
+
+
+
+***********************************************
+num1 = int(input('Enter Numerator: '))
+num2 = int(input('Enter Denominator: '))
+
+result = num1 % num2
+if(result == 0):
+    print('Completely Divisible by {}'.format(num2))
+elif(num1 < num2):
+    print('Numerator can not be less then Denominator')
+else:
+    print('Not Completely Divisible')
+
+
+
+*************************************************
+pie = 3.14
+radius = int(input('Enter the radius of sphere :'))
+V = 4/3 *(pie * radius **3)
+print('Volume of the Sphere with Radius {} is '.format(radius),V)
+
+
+**************************************************
+abc = input('Please enter the String ')
+copies = int(input('Please enter the number of copies '))
+result = abc * copies
+print(result)
+
+
+
+***************************************************
+
+num1 = int(input('Enter the number '))
+if (num1 % 2 == 0):
+    print('{} is an Even number'.format(num1))
+else:
+    print('{} is an Odd number'.format(num1))
+
+
+
+
+*******************************************************
+
+alpha = input('Enter a Character ')
+if (alpha.upper() == 'A' or alpha.lower()== 'a'):
+    print('Letter {} is a Vowel'.format(alpha))
+elif(alpha.upper() == 'E' or alpha.lower()== 'e'):
+    print('Letter {} is a Vowel'.format(alpha))
+elif(alpha.upper() == 'I' or alpha.lower()== 'i'):
+    print('Letter {} is a Vowel'.format(alpha))
+elif(alpha.upper() == 'O' or alpha.lower()== 'o'):
+    print('Letter {} is a Vowel'.format(alpha))
+elif(alpha.upper() == 'U' or alpha.lower()== 'u'):
+    print('Letter {} is a Vowel'.format(alpha))  
+else:
+    print('Letter {} is not a Vowel'.format(alpha))  
+
+
+*********************************************************
+B = int(input('Enter magnitude of Triangle base: '))
+H = int(input('Enter Magnitude of Triangle Height: '))
+Area = (B*H) / 2
+print ('Area of a Triangle with Height {} and Base {} is '.format(H,B),Area)
+
+
+**********************************************************
+
+amount = int(input('Please enter principal amount: '))
+interest = float(input('Please Enter Rate of interest in %: '))
+investment= int(input('Enter number of years for investment: '))
+result =  amount * (1+interest) **investment
+print(result)
+
+**********************************************************
+X1 = int(input('Enter Co-ordinate for x1: '))
+X2 = int(input('Enter Co-ordinate for x2: '))
+Y1 = int(input('Enter Co-ordinate for y1: '))
+Y2 = int(input('Enter Co-ordinate for y2: '))
+
+result = math.sqrt(((Y1- X1)**2) + ((Y2- X2)** 2 ))
+
+    
+print('Distance between points ({},{} and ({},{}) is )'.format(Y1,X1,Y2,X2),int(result))
+
